@@ -585,10 +585,10 @@
 				
 				</header>
 				
-				<form  id="contact-form" class="bl_form text-center" action="contact.php" method="post" novalidate>
+				<form  id="contact-form" class="bl_form text-center" action="./php_mailer/mail_handler.php" method="post" novalidate>
 					<span class="field-wrap scrollimation fade-right">
 						<label class="control-label" for="contact-name">Name</label>
-						<input id="contact-name" name="contactName" type="text" class="label_better requiredField" data-new-placeholder="Name" placeholder="Name" data-error-empty="*Enter your name">
+						<input id="contact-name" name="name" type="text" class="label_better requiredField" data-new-placeholder="Name" placeholder="Name" data-error-empty="*Enter your name">
 					</span>
 					<span class="field-wrap scrollimation fade-in">
 						<label class="control-label" for="contact-mail">Email</label>
@@ -596,7 +596,7 @@
 					</span>
 					<span class="field-wrap scrollimation fade-left">
 						<label class="control-label" for="contact-message">Message</label>
-						<textarea id="contact-message" name="comments" rows="1" class="label_better requiredField" data-new-placeholder="Message" placeholder="Message" data-error-empty="*Enter your message"></textarea>
+						<textarea id="contact-message" name="body" rows="1" class="label_better requiredField" data-new-placeholder="Message" placeholder="Message" data-error-empty="*Enter your message"></textarea>
 					</span>
 					
 					<p class="text-center"><button  name="submit" type="submit" class="btn btn-meflat icon-left" data-error-message="Error!" data-sending-message="Sending..." data-ok-message="Message Sent"><i class="fa fa-paper-plane"></i>Send Message</button></p>
