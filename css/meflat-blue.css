@@ -1411,3 +1411,14 @@ a:focus,
 		min-height:660px;
 	}
 }
+.icon-container{
+    text-align: center;
+    margin-top: 60px;
+}
+.skill-icons{
+    height: 140px;
+    width: 140px;
+    margin: 15px;
+    padding: 15px;
+    background-color: white;
+}
