@@ -71,9 +71,9 @@ a:focus,
   text-decoration: none;
 }
 
-.primary {
-	color:#38A5DB;
-}
+/*.primary {*/
+	/*color:#38A5DB;*/
+/*}*/
 
 /*----------------------
 ---Main Layout Styles---
@@ -377,9 +377,9 @@ a:focus,
 	overflow:hidden;
 }
 
-#home{
-    background-color:#38A5DB;
-}
+/*#home{*/
+    /*background-color:#38A5DB;*/
+/*}*/
 
 .jumbotron.bg-image {
     position: relative;
