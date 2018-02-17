@@ -13,7 +13,6 @@
 		<!-- ==============================================
 		Favicons
 		=============================================== -->
-		<link rel="shortcut icon" href="assets/favicon.ico">
 		<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 		<link rel="apple-touch-icon" sizes="72x72" href="assets/apple-touch-icon-72x72.png">
 		<link rel="apple-touch-icon" sizes="114x114" href="assets/apple-touch-icon-114x114.png">
@@ -67,19 +66,20 @@
 				<div id="site-nav" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
                         <li>
+                            <a href="#portfolio" class="scrollto">Projects</a>
+                        </li>
+                        <li>
                             <a href="#about" class="scrollto">About Me</a>
+                        </li>
+                        <li id="logo">
+                            <a href="#home" class="scrollto">
+                                <h1>C<span>C</span></h1>
+                            </a>
                         </li>
 						<li>
 							<a href="#skills" class="scrollto">Skills</a>
 						</li>
-						<li id="logo">
-							<a href="#home" class="scrollto">
-								<h1>C<span>C</span></h1>
-							</a>
-						</li>
-						<li>
-							<a href="#portfolio" class="scrollto">My Works</a>
-						</li>
+
 						<li>
 							<a href="#contact" class="scrollto">Contact Me</a>
 						</li>
@@ -187,7 +187,7 @@
 			
 				<header class="section-header text-center">
 				
-					<h1 class="scrollimation scale-in">Featured Project</h1>
+					<h1 class="scrollimation scale-in">Live Demo</h1>
 					<p>PetVet is the place where you can connect your pet to a veterinarian.
                         <br/> Owners can keep track of their pet's health allowing vet's full access to records.
                     </p>
@@ -209,6 +209,301 @@
 			</div>
 		
 		</section>
+		<!-- ==============================================
+		PORTFOLIO
+		=============================================== -->
+		<section id="portfolio" class="gray-bg padding-top-bottom">
+
+			<div class="container">
+
+				<header class="section-header text-center">
+
+					<h1 class="scrollimation scale-in">Projects</h1>
+					<p>A collection of projects utilizing popular front-end as well as back end frameworks/technologies.</p>
+
+				</header>
+
+				<!--==== Portfolio Filters ====-->
+				<div id="filter-works">
+					<ul>
+						<li class="active scrollimation fade-right d1">
+							<a href="#" data-filter="*">All</a>
+						</li>
+						<li class="scrollimation fade-right">
+							<a href="#" data-filter=".dashboard">Dashboard Apps</a>
+						</li>
+						<li class="scrollimation fade-left">
+							<a href="#" data-filter=".utilities">Utility</a>
+						</li>
+						<li class="scrollimation fade-left d1">
+							<a href="#" data-filter=".games">Game</a>
+						</li>
+					</ul>
+				</div><!--End portfolio filters -->
+
+			</div><!--End portfolio header -->
+
+			<div class="container masonry-wrapper scrollimation fade-in">
+
+				<div id="projects-container">
+
+					<!-- ==============================================
+					SINGLE PROJECT ITEM
+					=============================================== -->
+					<article class="project-item games">
+
+						<img class="img-responsive project-image" src="assets/project-images/guess_game.png"  alt="Guess Game Home Page"><!--Project thumb -->
+
+						<div class="hover-mask">
+							<h2 class="project-title">Guessing Game</h2><!--Project Title -->
+							<p>Details</p><!--Project Subtitle -->
+						</div>
+
+						<!--==== Guessing Game Preview HTML ====-->
+
+						<div class="sr-only project-description"
+							 data-category="Game"
+							 data-date="01/28/18"
+							 data-client="Client"
+							 data-images="assets/project-images/guess_game.png"
+						>
+							<p>A single player game that allows the user to guess a number within a randomized range. The number of guesses depends on the size of the range.
+								Background music can be turned on or off based on user preference. A history of previous guesseses is visibile to the user after each attempt.
+							</p>
+							<p>Guessing Game was created using React and styled with the latest Boostrap 4.</p>
+							<p>Code is available on <a href="https://github.com/camposss/Guessing-Game">Github </a> or click the button below for a live preview.</p>
+							<p class="text-right"><a class="btn btn-meflat icon-right" href="/guess">Visit Website<i class="fa fa-arrow-right"></i></a></p>
+						</div>
+
+					</article>
+					<!-- ==============================================
+					END PROJECT ITEM
+					=============================================== -->
+
+					<article class="project-item utilities">
+
+						<img class="img-responsive project-image" src="assets/project-images/student_grade_table.png"  alt=""><!--Project thumb -->
+
+						<div class="hover-mask">
+							<h2 class="project-title">Student Grade Table</h2><!--Project Title -->
+							<p>Details</p><!--Project Subtitle -->
+						</div>
+
+						<!--==== SGT Preview HTML ====-->
+
+						<div class="sr-only project-description"
+							 data-category="Utilities"
+							 data-date="02/18/18"
+							 data-client="Client"
+							 data-images="assets/project-images/student_grade_table.png"
+						>
+							<p>Student Grade Table (SGT) is a dynamic app that allows users to store student academic information.</p>
+							<p>SGT uses React/Redux as the main front-end framework and PHP/MySQL in the back-end. This app utilizes all facets of CRUD to uphold persistent data storage.
+								Furthermore the user is able to create, read, upload, and delete student information with ease.</p>
+							<p>Code is available on <a href="https://github.com/camposss/SGT_Full_Stack">Github.</a></p>
+							<p><strong>Live site currently in development.</strong></p>
+
+							<!--<p class="text-right"><a class="btn btn-meflat icon-right" href="#external-link">Visit Website<i class="fa fa-arrow-right"></i></a></p>-->
+						</div>
+
+					</article><!--End Project Item -->
+
+					<article class="project-item dashboard">
+
+						<img class="img-responsive project-image" src="assets/project-images/environmindful.png"  alt=""><!--Project thumb -->
+
+						<div class="hover-mask">
+							<h2 class="project-title">Environmindful</h2><!--Project Title -->
+							<p>Details</p><!--Project Subtitle -->
+						</div>
+
+						<!--==== Environmindful Preview HTML ====-->
+
+						<div class="sr-only project-description"
+							 data-category="Dashboard"
+							 data-date="02/16/18"
+							 data-client="Client"
+							 data-images="assets/project-images/environmindful.png"
+						>
+							<p>Environmindful is an ecological awareness dashboard app built during a 48 hour hackathon.</p>
+							<p>The application incorporates 6 APIs including Google maps, Google geocoding, and various energy production and news APIs using Ajax calls.</p>
+							<p>The app is written using functional programming and jQuery. Bootstrap's grid system was used for responsiveness as well as CSS3 for stylistic details.</p>
+							<p>Primarily responsible for Google maps and geocoding API handling as well styling.</p>
+							<p>Code available on <a href="https://github.com/camposss/Environmindful/">Github </a> or click the button below for a live preview.</p>
+
+							<p class="text-right"><a class="btn btn-meflat icon-right" href="https://camposss.github.io/Environmindful/">Visit Website<i class="fa fa-arrow-right"></i></a></p>
+						</div>
+
+					</article><!--End Project Item -->
+
+					<!--<article class="project-item icons">-->
+					<!---->
+					<!--<img class="img-responsive project-image" src="assets/placeholder-320x210.jpg"  alt="">&lt;!&ndash;Project thumb &ndash;&gt;-->
+					<!---->
+					<!--<div class="hover-mask">-->
+					<!--<h2 class="project-title">Project Title</h2>&lt;!&ndash;Project Title &ndash;&gt;-->
+					<!--<p>Subtitle</p>&lt;!&ndash;Project Subtitle &ndash;&gt;-->
+					<!--</div>-->
+					<!---->
+					<!--&lt;!&ndash;==== Project Preview HTML ====&ndash;&gt;-->
+					<!---->
+					<!--<div class="sr-only project-description" -->
+					<!--data-category="Category" -->
+					<!--data-date="Date" -->
+					<!--data-client="Client" -->
+					<!--data-link="www.example.com,http://www.google.com" -->
+					<!--data-descr="A small description goes here." -->
+					<!--data-images="assets/placeholder-750x430.jpg,assets/placeholder-750x430.jpg"-->
+					<!--&gt;-->
+					<!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.</p>-->
+					<!---->
+					<!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.</p>-->
+					<!--<p>Nam eget urna pellentesque nisl ultrices dapibus. Mauris accumsan vehicula nisl, sed tempus mauris facilisis eu. Donec a iaculis nisi, quis malesuada justo. Pellentesque ut enim sit amet ipsum dignissim egestas. Morbi tincidunt rhoncus urna eget placerat.</p>-->
+					<!--<p class="text-right"><a class="btn btn-meflat icon-right" href="#external-link">Visit Website<i class="fa fa-arrow-right"></i></a></p>-->
+					<!--</div>-->
+					<!---->
+					<!--</article>&lt;!&ndash;End Project Item &ndash;&gt;-->
+
+					<!--<article class="project-item ui-kits">-->
+					<!---->
+					<!--<img class="img-responsive project-image" src="assets/placeholder-320x210.jpg"  alt="">&lt;!&ndash;Project thumb &ndash;&gt;-->
+					<!---->
+					<!--<div class="hover-mask">-->
+					<!--<h2 class="project-title">Project Title</h2>&lt;!&ndash;Project Title &ndash;&gt;-->
+					<!--<p>Subtitle</p>&lt;!&ndash;Project Subtitle &ndash;&gt;-->
+					<!--</div>-->
+					<!---->
+					<!--&lt;!&ndash;==== Project Preview HTML ====&ndash;&gt;-->
+					<!---->
+					<!--<div class="sr-only project-description" -->
+					<!--data-category="Category" -->
+					<!--data-date="Date" -->
+					<!--data-client="Client" -->
+					<!--data-link="www.example.com,http://www.google.com" -->
+					<!--data-descr="A small description goes here." -->
+					<!--data-images="assets/placeholder-750x430.jpg,assets/placeholder-750x430.jpg"-->
+					<!--&gt;-->
+					<!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.</p>-->
+					<!---->
+					<!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.</p>-->
+					<!--<p>Nam eget urna pellentesque nisl ultrices dapibus. Mauris accumsan vehicula nisl, sed tempus mauris facilisis eu. Donec a iaculis nisi, quis malesuada justo. Pellentesque ut enim sit amet ipsum dignissim egestas. Morbi tincidunt rhoncus urna eget placerat.</p>-->
+					<!--<p class="text-right"><a class="btn btn-meflat icon-right" href="#external-link">Visit Website<i class="fa fa-arrow-right"></i></a></p>-->
+					<!--</div>-->
+					<!---->
+					<!--</article>&lt;!&ndash;End Project Item &ndash;&gt;-->
+
+					<!--<article class="project-item ui-kits">-->
+					<!---->
+					<!--<img class="img-responsive project-image" src="assets/placeholder-320x210.jpg"  alt="">&lt;!&ndash;Project thumb &ndash;&gt;-->
+					<!---->
+					<!--<div class="hover-mask">-->
+					<!--<h2 class="project-title">Project Title</h2>&lt;!&ndash;Project Title &ndash;&gt;-->
+					<!--<p>Subtitle</p>&lt;!&ndash;Project Subtitle &ndash;&gt;-->
+					<!--</div>-->
+					<!---->
+					<!--&lt;!&ndash;==== Project Preview HTML ====&ndash;&gt;-->
+					<!---->
+					<!--<div class="sr-only project-description" -->
+					<!--data-category="Category" -->
+					<!--data-date="Date" -->
+					<!--data-client="Client" -->
+					<!--data-link="www.example.com,http://www.google.com" -->
+					<!--data-descr="A small description goes here." -->
+					<!--data-images="assets/placeholder-750x430.jpg,assets/placeholder-750x430.jpg"-->
+					<!--&gt;-->
+					<!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.</p>-->
+					<!---->
+					<!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.</p>-->
+					<!--<p>Nam eget urna pellentesque nisl ultrices dapibus. Mauris accumsan vehicula nisl, sed tempus mauris facilisis eu. Donec a iaculis nisi, quis malesuada justo. Pellentesque ut enim sit amet ipsum dignissim egestas. Morbi tincidunt rhoncus urna eget placerat.</p>-->
+					<!--<p class="text-right"><a class="btn btn-meflat icon-right" href="#external-link">Visit Website<i class="fa fa-arrow-right"></i></a></p>-->
+					<!--</div>-->
+					<!---->
+					<!--</article>&lt;!&ndash;End Project Item &ndash;&gt;-->
+					<!---->
+				</div><!-- End projects -->
+
+			</div><!-- End container -->
+
+			<!-- ==============================================
+			PROJECT PREVIEW MODAL (Do not alter this markup)
+			=============================================== -->
+			<div id="project-modal" class="modal fade">
+
+				<div class="modal-dialog">
+
+					<div class="modal-content">
+
+						<div class="modal-header">
+
+							<div class="container">
+
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+								<h1 id="hdr-title" class="text-center"></h1>
+								<div class="row">
+									<div class="col-md-8 col-md-offset-2">
+										<div class="image-wrapper">
+											<img class="img-responsive" src="assets/chrome.png" alt="">
+											<div class="loader"></div>
+											<div class="screen"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="modal-body">
+							<div class="container">
+								<div class="row">
+									<div id="project-sidebar" class="col-md-3">
+										<h2 id="sdbr-title"></h2>
+										<p id="sdbr-category"></p>
+										<p id="sdbr-date"></p>
+										<p id="sdbr-client"></p>
+										<p id="sdbr-link"><a href="#link" target="_blank"></a></p>
+										<p id="sdbr-descr"></p>
+									</div>
+									<div id="project-content" class="col-md-8 col-md-offset-1">
+									</div>
+								</div>
+
+							</div>
+						</div><!-- End modal-body -->
+
+					</div><!-- End modal-content -->
+
+				</div><!-- End modal-dialog -->
+
+			</div><!-- End modal -->
+
+		</section>
+		<!-- ==============================================
+		DRIBBLE
+		=============================================== -->
+		<!--<section id="dribbble">-->
+		<!--<h1 class="dribbble-button"><a href="#" target="_blank">My Dribbble Shots</a></h1>-->
+		<!--<div class="row">-->
+		<!--<div class="col-md-2 col-sm-4 col-xs-6">-->
+		<!--<a href="#link" target="_blank"><img class="img-responsive" src="assets/placeholder-375x250.jpg"  alt=""></a>-->
+		<!--</div>-->
+		<!--<div class="col-md-2 col-sm-4 col-xs-6">-->
+		<!--<a href="#link" target="_blank"><img class="img-responsive" src="assets/placeholder-375x250.jpg"  alt=""></a>-->
+		<!--</div>-->
+		<!--<div class="col-md-2 col-sm-4 col-xs-6">-->
+		<!--<a href="#link" target="_blank"><img class="img-responsive" src="assets/placeholder-375x250.jpg"  alt=""></a>-->
+		<!--</div>-->
+		<!--<div class="col-md-2 col-sm-4 col-xs-6">-->
+		<!--<a href="#link" target="_blank"><img class="img-responsive" src="assets/placeholder-375x250.jpg"  alt=""></a>-->
+		<!--</div>-->
+		<!--<div class="col-md-2 col-sm-4 col-xs-6">-->
+		<!--<a href="#link" target="_blank"><img class="img-responsive" src="assets/placeholder-375x250.jpg"  alt=""></a>-->
+		<!--</div>-->
+		<!--<div class="col-md-2 col-sm-4 col-xs-6">-->
+		<!--<a href="#link" target="_blank"><img class="img-responsive" src="assets/placeholder-375x250.jpg"  alt=""></a>-->
+		<!--</div>-->
+		<!--</div>-->
+		<!--</section>-->
 		
 		
 		<!-- ==============================================
@@ -286,301 +581,7 @@
                 </div>
 			</div>
 		</section>
- 		<!-- ==============================================
-		PORTFOLIO
-		=============================================== -->	
-		<section id="portfolio" class="gray-bg padding-top-bottom">
-			
-			<div class="container">
-			
-				<header class="section-header text-center">
-				
-					<h1 class="scrollimation scale-in">My Works</h1>
-					<p>A collection of projects utilizing popular front-end as well as back end frameworks/technologies.</p>
-				
-				</header>
-				
-				<!--==== Portfolio Filters ====-->
-				<div id="filter-works">
-					<ul>
-						<li class="active scrollimation fade-right d1">
-							<a href="#" data-filter="*">All</a>
-						</li>
-						<li class="scrollimation fade-right">
-							<a href="#" data-filter=".dashboard">Dashboard Apps</a>
-						</li>
-						<li class="scrollimation fade-left">
-							<a href="#" data-filter=".utilities">Utility</a>
-						</li>
-						<li class="scrollimation fade-left d1">
-							<a href="#" data-filter=".games">Game</a>
-						</li>
-					</ul>
-				</div><!--End portfolio filters -->
-				
-			</div><!--End portfolio header -->
-			
-			<div class="container masonry-wrapper scrollimation fade-in">
-			
-				<div id="projects-container">
-				
-					<!-- ==============================================
-					SINGLE PROJECT ITEM
-					=============================================== -->	
-					<article class="project-item games">
-						
-						<img class="img-responsive project-image" src="assets/project-images/guess_game.png"  alt="Guess Game Home Page"><!--Project thumb -->
-						
-						<div class="hover-mask">
-							<h2 class="project-title">Guessing Game</h2><!--Project Title -->
-							<p>Details</p><!--Project Subtitle -->
-						</div>
-						
-						<!--==== Guessing Game Preview HTML ====-->
-						
-						<div class="sr-only project-description" 
-							data-category="Game"
-							data-date="01/28/18"
-							data-client="Client" 
-							data-images="assets/project-images/guess_game.png"
-						>
-							<p>A single player game that allows the user to guess a number within a randomized range. The number of guesses depends on the size of the range.
-                                Background music can be turned on or off based on user preference. A history of previous guesseses is visibile to the user after each attempt.
-                            </p>
-							<p>Guessing Game was created using React and styled with the latest Boostrap 4.</p>
-                            <p>Code is available on <a href="https://github.com/camposss/Guessing-Game">Github </a> or click the button below for a live preview.</p>
-							<p class="text-right"><a class="btn btn-meflat icon-right" href="/guess">Visit Website<i class="fa fa-arrow-right"></i></a></p>
-						</div>
-						
-					</article>
-					<!-- ==============================================
-					END PROJECT ITEM
-					=============================================== -->						
-					
-					<article class="project-item utilities">
-						
-						<img class="img-responsive project-image" src="assets/project-images/student_grade_table.png"  alt=""><!--Project thumb -->
-						
-						<div class="hover-mask">
-							<h2 class="project-title">Student Grade Table</h2><!--Project Title -->
-							<p>Details</p><!--Project Subtitle -->
-						</div>
-						
-						<!--==== SGT Preview HTML ====-->
-						
-						<div class="sr-only project-description" 
-							data-category="Utilities"
-							data-date="02/18/18"
-							data-client="Client" 
-							data-images="assets/project-images/student_grade_table.png"
-						>
-                            <p>Student Grade Table (SGT) is a dynamic app that allows users to store student academic information.</p>
-                            <p>SGT uses React/Redux as the main front-end framework and PHP/MySQL in the back-end. This app utilizes all facets of CRUD to uphold persistent data storage.
-                                Furthermore the user is able to create, read, upload, and delete student information with ease.</p>
-                            <p>Code is available on <a href="https://github.com/camposss/SGT_Full_Stack">Github.</a></p>
-                            <p><strong>Live site currently in development.</strong></p>
 
-                            <!--<p class="text-right"><a class="btn btn-meflat icon-right" href="#external-link">Visit Website<i class="fa fa-arrow-right"></i></a></p>-->
-						</div>
-						
-					</article><!--End Project Item -->
-
-					<article class="project-item dashboard">
-						
-						<img class="img-responsive project-image" src="assets/project-images/environmindful.png"  alt=""><!--Project thumb -->
-						
-						<div class="hover-mask">
-							<h2 class="project-title">Environmindful</h2><!--Project Title -->
-							<p>Details</p><!--Project Subtitle -->
-						</div>
-						
-						<!--==== Environmindful Preview HTML ====-->
-						
-						<div class="sr-only project-description" 
-							data-category="Dashboard"
-							data-date="02/16/18"
-							data-client="Client"
-							data-images="assets/project-images/environmindful.png"
-						>
-                            <p>Environmindful is an ecological awareness dashboard app built during a 48 hour hackathon.</p>
-                            <p>The application incorporates 6 APIs including Google maps, Google geocoding, and various energy production and news APIs using Ajax calls.</p>
-                            <p>The app is written using functional programming and jQuery. Bootstrap's grid system was used for responsiveness as well as CSS3 for stylistic details.</p>
-                            <p>Primarily responsible for Google maps and geocoding API handling as well styling.</p>
-							<p>Code available on <a href="https://github.com/camposss/Environmindful/">Github </a> or click the button below for a live preview.</p>
-
-							<p class="text-right"><a class="btn btn-meflat icon-right" href="https://camposss.github.io/Environmindful/">Visit Website<i class="fa fa-arrow-right"></i></a></p>
-						</div>
-						
-					</article><!--End Project Item -->
-
-					<!--<article class="project-item icons">-->
-						<!---->
-						<!--<img class="img-responsive project-image" src="assets/placeholder-320x210.jpg"  alt="">&lt;!&ndash;Project thumb &ndash;&gt;-->
-						<!---->
-						<!--<div class="hover-mask">-->
-							<!--<h2 class="project-title">Project Title</h2>&lt;!&ndash;Project Title &ndash;&gt;-->
-							<!--<p>Subtitle</p>&lt;!&ndash;Project Subtitle &ndash;&gt;-->
-						<!--</div>-->
-						<!---->
-						<!--&lt;!&ndash;==== Project Preview HTML ====&ndash;&gt;-->
-						<!---->
-						<!--<div class="sr-only project-description" -->
-							<!--data-category="Category" -->
-							<!--data-date="Date" -->
-							<!--data-client="Client" -->
-							<!--data-link="www.example.com,http://www.google.com" -->
-							<!--data-descr="A small description goes here." -->
-							<!--data-images="assets/placeholder-750x430.jpg,assets/placeholder-750x430.jpg"-->
-						<!--&gt;-->
-							<!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.</p>-->
-							<!---->
-							<!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.</p>-->
-							<!--<p>Nam eget urna pellentesque nisl ultrices dapibus. Mauris accumsan vehicula nisl, sed tempus mauris facilisis eu. Donec a iaculis nisi, quis malesuada justo. Pellentesque ut enim sit amet ipsum dignissim egestas. Morbi tincidunt rhoncus urna eget placerat.</p>-->
-							<!--<p class="text-right"><a class="btn btn-meflat icon-right" href="#external-link">Visit Website<i class="fa fa-arrow-right"></i></a></p>-->
-						<!--</div>-->
-						<!---->
-					<!--</article>&lt;!&ndash;End Project Item &ndash;&gt;-->
-
-					<!--<article class="project-item ui-kits">-->
-						<!---->
-						<!--<img class="img-responsive project-image" src="assets/placeholder-320x210.jpg"  alt="">&lt;!&ndash;Project thumb &ndash;&gt;-->
-						<!---->
-						<!--<div class="hover-mask">-->
-							<!--<h2 class="project-title">Project Title</h2>&lt;!&ndash;Project Title &ndash;&gt;-->
-							<!--<p>Subtitle</p>&lt;!&ndash;Project Subtitle &ndash;&gt;-->
-						<!--</div>-->
-						<!---->
-						<!--&lt;!&ndash;==== Project Preview HTML ====&ndash;&gt;-->
-						<!---->
-						<!--<div class="sr-only project-description" -->
-							<!--data-category="Category" -->
-							<!--data-date="Date" -->
-							<!--data-client="Client" -->
-							<!--data-link="www.example.com,http://www.google.com" -->
-							<!--data-descr="A small description goes here." -->
-							<!--data-images="assets/placeholder-750x430.jpg,assets/placeholder-750x430.jpg"-->
-						<!--&gt;-->
-							<!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.</p>-->
-							<!---->
-							<!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.</p>-->
-							<!--<p>Nam eget urna pellentesque nisl ultrices dapibus. Mauris accumsan vehicula nisl, sed tempus mauris facilisis eu. Donec a iaculis nisi, quis malesuada justo. Pellentesque ut enim sit amet ipsum dignissim egestas. Morbi tincidunt rhoncus urna eget placerat.</p>-->
-							<!--<p class="text-right"><a class="btn btn-meflat icon-right" href="#external-link">Visit Website<i class="fa fa-arrow-right"></i></a></p>-->
-						<!--</div>-->
-						<!---->
-					<!--</article>&lt;!&ndash;End Project Item &ndash;&gt;-->
-
-					<!--<article class="project-item ui-kits">-->
-						<!---->
-						<!--<img class="img-responsive project-image" src="assets/placeholder-320x210.jpg"  alt="">&lt;!&ndash;Project thumb &ndash;&gt;-->
-						<!---->
-						<!--<div class="hover-mask">-->
-							<!--<h2 class="project-title">Project Title</h2>&lt;!&ndash;Project Title &ndash;&gt;-->
-							<!--<p>Subtitle</p>&lt;!&ndash;Project Subtitle &ndash;&gt;-->
-						<!--</div>-->
-						<!---->
-						<!--&lt;!&ndash;==== Project Preview HTML ====&ndash;&gt;-->
-						<!---->
-						<!--<div class="sr-only project-description" -->
-							<!--data-category="Category" -->
-							<!--data-date="Date" -->
-							<!--data-client="Client" -->
-							<!--data-link="www.example.com,http://www.google.com" -->
-							<!--data-descr="A small description goes here." -->
-							<!--data-images="assets/placeholder-750x430.jpg,assets/placeholder-750x430.jpg"-->
-						<!--&gt;-->
-							<!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.</p>-->
-							<!---->
-							<!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.</p>-->
-							<!--<p>Nam eget urna pellentesque nisl ultrices dapibus. Mauris accumsan vehicula nisl, sed tempus mauris facilisis eu. Donec a iaculis nisi, quis malesuada justo. Pellentesque ut enim sit amet ipsum dignissim egestas. Morbi tincidunt rhoncus urna eget placerat.</p>-->
-							<!--<p class="text-right"><a class="btn btn-meflat icon-right" href="#external-link">Visit Website<i class="fa fa-arrow-right"></i></a></p>-->
-						<!--</div>-->
-						<!---->
-					<!--</article>&lt;!&ndash;End Project Item &ndash;&gt;-->
-						<!---->
-				</div><!-- End projects -->
-
-			</div><!-- End container -->
-			
-			<!-- ==============================================
-			PROJECT PREVIEW MODAL (Do not alter this markup)
-			=============================================== -->	
-			<div id="project-modal" class="modal fade">
-			
-				<div class="modal-dialog">
-				
-					<div class="modal-content">
-					
-						<div class="modal-header">
-						
-							<div class="container">
-							
-								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-								
-								<h1 id="hdr-title" class="text-center"></h1>
-								<div class="row">
-									<div class="col-md-8 col-md-offset-2">
-										<div class="image-wrapper">
-											<img class="img-responsive" src="assets/chrome.png" alt="">
-											<div class="loader"></div>
-											<div class="screen"></div>
-										</div>
-									</div>
-								</div>
-							</div>
-							
-						</div>
-						
-						<div class="modal-body">
-							<div class="container">
-								<div class="row">
-									<div id="project-sidebar" class="col-md-3">
-										<h2 id="sdbr-title"></h2>
-										<p id="sdbr-category"></p>
-										<p id="sdbr-date"></p>
-										<p id="sdbr-client"></p>
-										<p id="sdbr-link"><a href="#link" target="_blank"></a></p>
-										<p id="sdbr-descr"></p>
-									</div>
-									<div id="project-content" class="col-md-8 col-md-offset-1">
-									</div>
-								</div>
-								
-							</div>
-						</div><!-- End modal-body -->
-						
-					</div><!-- End modal-content -->
-					
-				</div><!-- End modal-dialog -->
-				
-			</div><!-- End modal -->
-			
-		</section>
-		<!-- ==============================================
-		DRIBBLE 
-		=============================================== -->	
-		<!--<section id="dribbble">-->
-			<!--<h1 class="dribbble-button"><a href="#" target="_blank">My Dribbble Shots</a></h1>-->
-				<!--<div class="row">-->
-					<!--<div class="col-md-2 col-sm-4 col-xs-6">-->
-						<!--<a href="#link" target="_blank"><img class="img-responsive" src="assets/placeholder-375x250.jpg"  alt=""></a>-->
-					<!--</div>-->
-					<!--<div class="col-md-2 col-sm-4 col-xs-6">-->
-						<!--<a href="#link" target="_blank"><img class="img-responsive" src="assets/placeholder-375x250.jpg"  alt=""></a>-->
-					<!--</div>-->
-					<!--<div class="col-md-2 col-sm-4 col-xs-6">-->
-						<!--<a href="#link" target="_blank"><img class="img-responsive" src="assets/placeholder-375x250.jpg"  alt=""></a>-->
-					<!--</div>-->
-					<!--<div class="col-md-2 col-sm-4 col-xs-6">-->
-						<!--<a href="#link" target="_blank"><img class="img-responsive" src="assets/placeholder-375x250.jpg"  alt=""></a>-->
-					<!--</div>-->
-					<!--<div class="col-md-2 col-sm-4 col-xs-6">-->
-						<!--<a href="#link" target="_blank"><img class="img-responsive" src="assets/placeholder-375x250.jpg"  alt=""></a>-->
-					<!--</div>-->
-					<!--<div class="col-md-2 col-sm-4 col-xs-6">-->
-						<!--<a href="#link" target="_blank"><img class="img-responsive" src="assets/placeholder-375x250.jpg"  alt=""></a>-->
-					<!--</div>-->
-				<!--</div>-->
-		<!--</section>-->
 		<!-- ==============================================
 		CONTACT
 		=============================================== -->	
