@@ -124,7 +124,7 @@
     el.each(function( index, value ) {
       var btn = $(this),
           position = btn.data("position")  || settings.position;
-      btn.wrapAll("<div class='lb_wrap' style='position:relative; display: inline;'></div>")
+      btn.wrapAll("<div class='lb_wrap' style='display: inline;'></div>")
       
       if( btn.val().length > 0) {
         var text = btn.data("new-placeholder")  || btn.attr("placeholder");

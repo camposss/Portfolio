@@ -15,9 +15,15 @@ $(document).ready(function() {
 			$('#main-nav').removeClass('scrolled');
 		}
 		else{
-			$('#main-nav').addClass('scrolled');    
+			$('#main-nav').addClass('scrolled');
+			    
 		}
+		closeNav();
 	});
+	function closeNav(){
+		$('#site-nav').collapse('hide');
+	}
+	$(window).on('click',closeNav);
 	
 	/*============================================
 	Header Functions

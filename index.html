@@ -29,8 +29,8 @@
 		<!-- ==============================================
 		Fonts
 		=============================================== -->
-		<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300,300italic,200,400italic,600,600italic' rel='stylesheet' type='text/css'>
+		<link href='//fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+		<link href='//fonts.googleapis.com/css?family=Titillium+Web:400,300,300italic,200,400italic,600,600italic' rel='stylesheet' type='text/css'>
 		
 		<!-- ==============================================
 		JS
@@ -608,7 +608,6 @@
                     <img src="./assets/skills-images/github.svg" alt="github-logo" class="skill-icons">
                     <img src="./assets/skills-images/slack.svg" alt="slack-logo" class="skill-icons">
 					<img src="./assets/skills-images/phpstorm.svg" alt="phpStorm-logo" class="skill-icons">
-					<img src="./assets/skills-images/vs-code.svg" alt="phpStorm-logo" class="skill-icons">
                 </div>
                 <div class="row icon-container">
                     <p class="text-center"><strong>Familiar with: </strong> Python, MongoDB, Mongoose, Firebase, Webpack</p>
@@ -639,10 +638,12 @@
 						<label class="control-label" for="contact-mail">Email</label>
 						<input id="contact-mail" name="email" type="email" class="label_better requiredField" data-new-placeholder="Email Address" placeholder="Email Address" data-error-empty="*Enter your email" data-error-invalid="x Invalid email address">
 					</span>
-					<span class="field-wrap scrollimation fade-left">
-						<label class="control-label" for="contact-message">Message</label>
-						<textarea id="contact-message" name="body" rows="1" class="label_better requiredField" data-new-placeholder="Message" placeholder="Message" data-error-empty="*Enter your message"></textarea>
-					</span>
+					<div class="row">
+						<span class="field-wrap scrollimation fade-left">
+							<label class="control-label" for="contact-message">Message</label>
+							<textarea id="contact-message" name="body" rows="1" class="label_better requiredField message-textarea" data-new-placeholder="Message" placeholder="Message" data-error-empty="*Enter your message"></textarea>
+						</span>
+					</div>
 					
 					<p class="text-center"><button  name="submit" type="submit" class="btn btn-meflat icon-left" data-error-message="Error!" data-sending-message="Sending..." data-ok-message="Message Sent"><i class="fa fa-paper-plane"></i>Send Message</button></p>
 					<input type="hidden" name="submitted" id="submitted" value="true" />
@@ -688,7 +689,7 @@
 		<!-- ==============================================
 		SCRIPTS
 		=============================================== -->	
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="js/libs/jquery-1.9.1.min.js">\x3C/script>')</script>
 		
 		<script src="js/libs/bootstrap.min.js"></script>
@@ -698,7 +699,7 @@
 		<script src='js/jquery.flexslider.min.js'></script>
 		<script src='js/jquery.masonry.js'></script>
 		<script src="js/waypoints.min.js"></script>
-		<script src="js/jquery.label_better.min.js"></script>
+		<script src="js/jquery.label_better.js"></script>
 		<script src="js/jquery.easypiechart.js"></script>
 		<script src="js/contact.js"></script>
 		<script src="js/meflat.js"></script>
