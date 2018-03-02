@@ -23,7 +23,7 @@ $(document).ready(function() {
 	function closeNav(){
 		$('#site-nav').collapse('hide');
 	}
-	$(window).on('click',closeNav);
+	$(window).on('click', closeNav);
 	
 	/*============================================
 	Header Functions
