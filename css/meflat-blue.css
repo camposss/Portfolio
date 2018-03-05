@@ -1146,8 +1146,9 @@ a:focus,
 
 #contact-form .field-wrap .error-message{
     display:block;
-    position:absolute;
-    top:50px;
+    /* position:absolute; */
+    margin-top: 10px;
+    /* top:50px; */
     left:0;
     width:100%;
     font-size:16px;
@@ -1427,5 +1428,20 @@ a:focus,
     position: absolute;
 }
 #contact-message.message-textarea{
-    min-width: 200px;
+    min-width: 420px;
+    min-height: 200px;
+}
+@media only screen and (max-width: 500px) {
+    #contact-message.message-textarea {
+        min-width: 320px;
+    }
+    #contact-name.name-input-field, #contact-mail.name-input-field{
+        min-width: 320px;
+    }
+}
+.skill-name{
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
 }
